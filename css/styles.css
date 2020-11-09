@@ -1,0 +1,86 @@
+/* Global Styles */
+@import url("https://use.typekit.net/sdl1lio.css");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-family: Neue Haas Grotesk Display Pro, sans-serif;
+  font-size: 10px;
+  color: #0a0a0a;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10% auto;
+}
+
+p {
+  font-size: 2.4rem;
+  width: 382px;
+}
+
+.ontario {
+  margin-bottom: -4px;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+.description__decoration {
+  height: 48px;
+  width: 382px;
+  position: relative;
+}
+
+.description__decoration:hover .top-layer {
+  bottom: 28px;
+  left: 0;
+  height: 28px;
+}
+
+.top-layer,
+.bottom-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 48px;
+  width: 382px;
+  overflow: hidden;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.bottom-layer {
+  background-color: #0a0a0a;
+  color: #fafafa;
+}
+
+.top-layer {
+  z-index: 1;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  background-color: #fafafa;
+  color: #0a0a0a;
+}

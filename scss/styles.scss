@@ -1,0 +1,90 @@
+/* Global Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@import url("https://use.typekit.net/sdl1lio.css");
+
+$main-font: Neue Haas Grotesk Display Pro, sans-serif;
+$secondary-font: roboto, sans-serif;
+
+$dark: #0a0a0a;
+$light: #fafafa;
+$tertiary-color: #dddddd;
+
+html {
+  font-family: $main-font;
+  font-size: 10px;
+  color: $dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 10% auto;
+}
+
+p {
+  font-size: 2.4rem;
+  width: 382px;
+}
+
+.ontario {
+  margin-bottom: -4px;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+$height: 48px;
+$topLayerHeight: $height/2;
+
+.description__decoration {
+  height: 48px;
+  width: 382px;
+  position: relative;
+  &:hover {
+    .top-layer {
+      bottom: $topLayerHeight + 4;
+      left: 0;
+      height: $topLayerHeight + 4;
+    }
+  }
+}
+
+.top-layer,
+.bottom-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: $height;
+  width: 382px;
+  overflow: hidden;
+  transition: all 150ms ease-in-out;
+}
+
+.bottom-layer {
+  background-color: $dark;
+  color: $light;
+}
+
+.top-layer {
+  z-index: 1;
+  transform-origin: bottom center;
+  background-color: $light;
+  color: $dark;
+}
