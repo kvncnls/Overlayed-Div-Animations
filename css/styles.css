@@ -48,13 +48,13 @@ h2 {
   font-size: 4rem;
 }
 
-.description__decoration {
+.decoration {
   height: 48px;
   width: 382px;
   position: relative;
 }
 
-.description__decoration:hover .top-layer {
+.decoration:hover .top-layer {
   bottom: 28px;
   left: 0;
   height: 28px;

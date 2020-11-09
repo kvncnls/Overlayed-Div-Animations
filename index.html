@@ -11,7 +11,7 @@
 <body>
   <div class="container">
     <p class="ontario">I'm an Ontario-based</p>
-    <div class="description__decoration">
+    <div class="decoration">
       <div class="top-layer">
         <h2>designer & developer</h2>
       </div>
@@ -26,14 +26,17 @@
       web design
       and
       development.<br><br>
-      I build modern websites using the latest designs and technologies to reach your business goals.<br><br>
-      Hover over the bolded text.
-      <br> So what exactly is going on?<br><br></p>
+      I build modern websites using the latest designs and technologies to reach your business goals.<br><br></p>
+    <hr>
+    <p><strong> Hover over the bolded text.<br><br></strong></p>
     <p>There's two divs on top of each other, both having the same h2 text inside.</p>
     <p>One div has a white background with a black h2 text.<br><br> This is what you see normally.</p>
     <p>It has a z-index of 1 to put it on top.</p><br><br>
-    <p>The second div has a black background with a white h2 text. <br>This gets revealed on hover.</p><br><br>
-    <p>The top-layer div SHRINKS its height so that the bottom layer is revealed underneath</p>
+    <p>The second div has a black background with a white h2 text.
+      <br>This gets revealed when their .decoration div is hovered.</p><br><br>
+    <p>I SPECIFICALLY did this so that the animation works even if we're not hovering over the text itself.</p>
+    <p>The top-layer div (white bg, black txt) SHRINKS its height so that the bottom layer (black bg, white txt) is
+      revealed underneath.</p>
   </div>
 
 </body>
